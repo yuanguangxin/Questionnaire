@@ -26,6 +26,5 @@
     <orderEntry type="library" name="mybatis_plugins" level="project" />
     <orderEntry type="library" name="c3p0" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.0.5-bin" level="project" />
   </component>
 </module>
