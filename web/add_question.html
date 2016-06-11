@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="">
-    <script type="text/javascript" src="css/add_question.css"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/add_question.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+<div style="border-right: 1px solid #ccc" class="pull-left col-md-2">
+    <br/>
+    <div class="form-group">
+        <button type="button" style="outline: none;" class="btn btn-success btn-group-sm">
+            可拖拽组件
+        </button>
+    </div>
+    <hr/>
+    <div class="form-group">
+        <button type="button" style="outline: none;" class="btn btn-primary btn-group-sm">
+            下划线(Input)
+        </button>
+    </div>
+    <div class="input" draggable="true">
+        <input type="text" class="size_1 under" readonly/>
+    </div>
+    <div class="input" draggable="true">
+        <input type="text" class="size_2 under" readonly/>
+    </div>
+    <div class="input" draggable="true">
+        <input type="text" class="size_3 under" readonly/>
+    </div>
+    <div class="input" draggable="true">
+        <input type="text" class="size_4 under" readonly/>
+    </div>
+    <div class="input" draggable="true">
+        <input type="text" class="size_5 under" readonly/>
+    </div>
+    <br/>
+    <div class="form-group">
+        <button type="button" style="outline: none;" class="btn btn-primary btn-group-sm">
+            答案框(Input)
+        </button>
+    </div>
+    <div class="input_normal" >
+        <div class="input" style="display: inline-block;vertical-align: bottom" >
+            <input type="text" class="nsize_1" draggable="true" readonly/>
+        </div>
+        <div class="input" style="display: inline-block;vertical-align: bottom">
+            <input type="text" class="nsize_2" draggable="true" readonly/>
+        </div>
+        <div class="input" style="display: inline-block;vertical-align: bottom">
+            <input type="text" class="nsize_3" draggable="true" readonly/>
+        </div>
+        <div class="input" style="display: inline-block;vertical-align: bottom">
+            <input type="text" class="nsize_4" draggable="true" readonly/>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <button type="button" style="outline: none;" class="btn btn-primary btn-group-sm">
+            表格(Table)
+        </button>
+    </div>
+</div>
+<div class="pull-right col-md-10">
+    <div contenteditable="true" class="question">11</div>
+</div>
 </body>
 </html>

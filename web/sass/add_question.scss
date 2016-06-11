@@ -1,0 +1,54 @@
+$text_width:40px;
+$answer_width:15px;
+.question{
+  width: 750px;
+  height:50%;
+  background: #ccc;
+}
+.size_1{
+  width: $text_width;
+  height: 30px;
+}
+.size_2{
+  width: $text_width*2;
+  height: 30px;
+}
+.size_3{
+  width: $text_width*3;
+  height: 30px;
+}
+.size_4{
+  width: $text_width*4;
+  height: 30px;
+}
+.size_5{
+  width: $text_width*5;
+  height: 30px;
+}
+.under{
+  border: 0px;
+  border-bottom: 1px solid rebeccapurple;
+  outline: none;
+}
+input:hover{
+   cursor: pointer;
+}
+.nsize_1{
+  width: $answer_width;
+  height: $answer_width;
+}
+.nsize_2{
+  width: $answer_width*1.4;
+  height: $answer_width*1.4;
+}
+.nsize_3{
+  width: $answer_width*1.8;
+  height: $answer_width*1.8;
+}
+.nsize_4{
+  width: $answer_width*2.2;
+  height: $answer_width*2.2;
+}
+.input{
+  margin-left: 10px;
+}
