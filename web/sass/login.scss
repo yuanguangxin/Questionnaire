@@ -1,0 +1,26 @@
+$blue: #4296DB;
+$content-width:500px;
+$content-height:340px;
+.content{
+  width: $content-width;
+  height: $content-height;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -($content-width/2);
+  margin-top: -($content-height/2);
+}
+.form-control{
+  width: 70%;
+  height: 40px;
+}
+.btn-lg{
+  width: 190px;
+  height: 50px;
+}
+.btn:hover{
+  background: #F3F3F3;
+}
+.btn:active{
+  box-shadow:none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Index</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="left-menu">
+		<div>Admin System</div>
+		<div class="tab">
+			<div><a style="text-decoration: none;color: inherit" target="_blank" href="https://baidu.com">题目录入</a></div>
+			<div>题目管理</div>
+			<div>问卷生成</div>
+			<div>打印调查结果</div>
+			<div>管理员管理</div>
+		</div>
+	</div>
+	<div class="right-menu">
+		<div>
+			<div class="count">
+				<div>nobody</div>
+				<div><a href="index2.html">退出</a></div>
+			</div>
+		</div>
+		<div>
+			<iframe src="welcome.html" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="footer">
+		Copyright © 2016, admin.com
+	</div>
+</body>
+<script>
+	$(function(){
+		$(".tab div").click(function(){
+			var content = $(this).html();
+			if(content == "题目管理"){
+//				$("iframe").prop("src","admincheck.html");
+			}else if(content == "问卷生成"){
+
+			}
+		})
+	})
+</script>
+</html>

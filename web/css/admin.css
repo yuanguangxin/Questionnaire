@@ -1,0 +1,82 @@
+body{
+	margin:0;
+	font-family: "Microsoft YaHei";
+}
+a{
+	color: #000;
+}
+a:hover{
+	color:#000;
+	text-decoration: none;
+}
+.left-menu{
+	width: 12%;
+	height: 1000px;
+	float: left;
+	background-color: #03A9F4;
+}
+.left-menu>div:first-child{
+	width: 90%;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.left-menu>div:last-child{
+	width: 90%;
+	height: 260px;
+	margin: 20px auto;
+}
+.left-menu>div:last-child>div{
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+.right-menu{
+	width: 88%;
+	height: 1000px;
+	float: left;
+}
+.right-menu>div:first-child{
+	width: 100%;
+	height: 60px;
+	background-color: #4CAF50;
+}
+.count{
+	width: 10%;
+	float: right;
+}
+.count>div{
+	width: 80px;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+	font-size: 14px;
+	float: left;
+}
+.count>div:first-child{
+	text-align: center;
+}
+.right-menu>div:last-child{
+	width: 100%;
+	height: 940px;
+}
+.right-menu>div:last-child>iframe{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: rgb(12,45,34);
+	color: #fff;
+	clear: both;
+}

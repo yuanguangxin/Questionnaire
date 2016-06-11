@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+    <form role="form" class="form-horizontal" action="welcome.html">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">
+                <span class="glyphicon glyphicon-user"></span>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Username"/>
+            </div>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">
+                <span class="glyphicon glyphicon-pushpin"></span>
+            </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Password"/>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="form-group">
+            <label class="col-sm-8 control-label">
+                <button type="button" style="outline: none;" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-log-in"></span> &nbsp;&nbsp;Sign-in
+                </button>
+            </label>
+        </div>
+    </form>
+</div>
+<script>
+    var login = document.getElementsByTagName("button")[0];
+    login.onclick = function(){
+        var username = document.getElementsByTagName("input")[0].value;
+        var password = document.getElementsByTagName("input")[1].value;
+        $.post("/login.action",{username:username,password:password},function(text,dataStatus){
+            if(text=="wrong"){
+                alert("Wrong Account！");
+            }else{
+                document.getElementsByTagName("form")[0].submit();
+            }
+        });
+    }
+</script>
+</body>
+</html>
