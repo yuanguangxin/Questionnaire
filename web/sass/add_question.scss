@@ -1,9 +1,13 @@
 $text_width:40px;
 $answer_width:15px;
+body{
+  font-size: 17px;
+}
 .question{
   width: 750px;
-  height:50%;
-  background: #ccc;
+  position: absolute;
+  border: 2px solid #ccc;
+  outline: none;
 }
 .size_1{
   width: $text_width;

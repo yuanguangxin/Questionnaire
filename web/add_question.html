@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/add_question.css">
+    <script src="js/add_question.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
@@ -22,20 +23,20 @@
             下划线(Input)
         </button>
     </div>
-    <div class="input" draggable="true">
-        <input type="text" class="size_1 under" readonly/>
+    <div class="input">
+        <input id="u1" draggable="true" ondragstart="drag(event)" type="text" class="size_1 under" readonly/>
     </div>
-    <div class="input" draggable="true">
-        <input type="text" class="size_2 under" readonly/>
+    <div class="input">
+        <input id="u2" draggable="true" ondragstart="drag(event)" type="text" class="size_2 under" readonly/>
     </div>
-    <div class="input" draggable="true">
-        <input type="text" class="size_3 under" readonly/>
+    <div class="input">
+        <input id="u3" draggable="true" ondragstart="drag(event)" type="text" class="size_3 under" readonly/>
     </div>
-    <div class="input" draggable="true">
-        <input type="text" class="size_4 under" readonly/>
+    <div class="input">
+        <input id="u4" draggable="true" ondragstart="drag(event)" type="text" class="size_4 under" readonly/>
     </div>
-    <div class="input" draggable="true">
-        <input type="text" class="size_5 under" readonly/>
+    <div class="input">
+        <input id="u5" draggable="true" ondragstart="drag(event)" type="text" class="size_5 under" readonly/>
     </div>
     <br/>
     <div class="form-group">
@@ -45,16 +46,16 @@
     </div>
     <div class="input_normal" >
         <div class="input" style="display: inline-block;vertical-align: bottom" >
-            <input type="text" class="nsize_1" draggable="true" readonly/>
+            <input id="drag1" type="text" class="nsize_1" ondragstart="drag(event)" draggable="true" readonly/>
         </div>
         <div class="input" style="display: inline-block;vertical-align: bottom">
-            <input type="text" class="nsize_2" draggable="true" readonly/>
+            <input id="drag2" type="text" class="nsize_2" ondragstart="drag(event)" draggable="true" readonly/>
         </div>
         <div class="input" style="display: inline-block;vertical-align: bottom">
-            <input type="text" class="nsize_3" draggable="true" readonly/>
+            <input id="drag3" type="text" class="nsize_3" ondragstart="drag(event)" draggable="true" readonly/>
         </div>
         <div class="input" style="display: inline-block;vertical-align: bottom">
-            <input type="text" class="nsize_4" draggable="true" readonly/>
+            <input id="drag4" type="text" class="nsize_4" ondragstart="drag(event)" draggable="true" readonly/>
         </div>
     </div>
     <br/>
@@ -65,7 +66,32 @@
     </div>
 </div>
 <div class="pull-right col-md-10">
-    <div contenteditable="true" class="question">11</div>
+    <div id="div1" contenteditable="true" class="question" ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
 </div>
+<script>
+    function allowDrop(ev)
+    {
+        ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+        ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text");
+        var a = document.getElementById(data).cloneNode(true);
+        a.style.position = "absolute";
+        a.style.left="10px";
+        a.setAttribute("draggable","false");
+        $(a).addClass("draggable");
+//        a.removeAttribute("readonly");
+        ev.target.appendChild(a);
+    }
+</script>
 </body>
 </html>
