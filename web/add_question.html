@@ -65,7 +65,43 @@
         </button>
     </div>
 </div>
-<div class="pull-right col-md-10">
+
+<div class="pull-right col-md-3"  style="border-left: 1px solid #ccc">
+    <br/>
+    <div class="form-group">
+        <img src="img/Tips.jpg" width="26%" height="26%"/>
+    </div>
+    <table class="table">
+        <tr>
+            <td>
+                1.编辑区可进行文本编辑，可自行排版
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.若要加粗字体，请在文字左右包含&lt;b&gt;&lt;/b&gt;标签
+                <br/>
+                <b>如：&lt;b&gt;您的年龄是&lt;/b&gt;</b>
+            </td>
+        </tr>
+        <tr>
+            <td>3.左侧组件可拖拽，可根据需求自选组件</td>
+        </tr>
+        <tr>
+            <td>4.若要删除已拖拽的组件，直接将组件拖出文本编辑区外即可</td>
+        </tr>
+        <tr>
+            <td>5.编辑完成可按Ctrl+s保存添加到题库</td>
+        </tr>
+    </table>
+</div>
+<div class="pull-right col-md-7">
+    <br/>
+    <div class="form-group">
+        <button type="button" style="outline: none;" class="btn btn-success btn-group-sm">
+            编辑区
+        </button>
+    </div>
     <div id="div1" contenteditable="true" class="question" ondrop="drop(event)"
          ondragover="allowDrop(event)"></div>
 </div>
@@ -87,9 +123,8 @@
         var a = document.getElementById(data).cloneNode(true);
         a.style.position = "absolute";
         a.style.left="10px";
-        a.setAttribute("draggable","false");
         $(a).addClass("draggable");
-//        a.removeAttribute("readonly");
+        a.setAttribute("draggable","false");
         ev.target.appendChild(a);
     }
 </script>

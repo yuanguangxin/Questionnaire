@@ -1,4 +1,15 @@
 window.onload = function(){
+    $(document).keydown(function(e){
+        if( e.ctrlKey  == true && e.keyCode == 83 ){
+            if(document.getElementsByClassName("question")[0].innerHTML==""){
+                alert("请添加内容！")
+            }else {
+                if(confirm("是否保存添加到题库")){
+                    location.reload();
+                }
+            }
+        }
+    });
     var DragDrop = function DragDrop(){
         var dragging = null;
         var diffX = 0;
@@ -21,7 +32,7 @@ window.onload = function(){
                     break;
                 case "mouseup":
                     var ofTop = window.getComputedStyle(document.getElementsByClassName("question")[0],null)["height"];
-                    if(dragging.style.left.split("px")[0]>750){
+                    if(dragging.style.left.split("px")[0]>650){
                         target.remove();
                     }
                     dragging = null;
