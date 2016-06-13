@@ -1,8 +1,8 @@
-$text_width:40px;
+$text_width:37px;
 $answer_width:15px;
 body{
   font-family: "microsoft yahei";
-  font-size: 17px;
+  font-size: 16px;
 }
 .question{
   width: 750px;
@@ -12,23 +12,23 @@ body{
 }
 .size_1{
   width: $text_width;
-  height: 30px;
+  height: 20px;
 }
 .size_2{
   width: $text_width*2;
-  height: 30px;
+  height: 20px;
 }
 .size_3{
   width: $text_width*3;
-  height: 30px;
+  height: 20px;
 }
 .size_4{
   width: $text_width*4;
-  height: 30px;
+  height: 20px;
 }
 .size_5{
   width: $text_width*5;
-  height: 30px;
+  height: 20px;
 }
 .under{
   border: 0px;
