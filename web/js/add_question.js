@@ -10,6 +10,32 @@ window.onload = function(){
             }
         }
     });
+
+    var create_table = document.getElementById("create_table");
+    create_table.onclick = function () {
+        var tab_width = document.getElementById("tab_width").value+"px";
+        var tab_height = document.getElementById("tab_height").value+"px";
+        var tab_row = document.getElementById("tab_row").value;
+        var tab_col = document.getElementById("tab_col").value;
+        var tab_colspan = document.getElementById("tab_colspan").value.split(";")[0];
+        var colspan_pos_x = tab_colspan[1];
+        var colspan_pos_y = tab_colspan[3];
+        var colspan_pos_len = tab_colspan[5];
+        var s = "<table class='table-bordered'>";
+        for(var i=0;i<tab_row;i++){
+            s = s + "<tr>";
+            for(var j=0;j<tab_col;j++){
+                if(i==colspan_pos_x&&j==colspan_pos_y){
+                    s = s + "<td colspan="+colspan_pos_len+">"+i+","+j+"</td>";
+                }else {
+                    s = s + "<td>"+i+","+j+"</td>";
+                }
+            }
+            s = s + "</tr>"
+        }
+        s=s+"</table>"
+        alert(s);
+    };
     var DragDrop = function DragDrop(){
         var dragging = null;
         var diffX = 0;

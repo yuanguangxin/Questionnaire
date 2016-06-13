@@ -64,6 +64,54 @@
             表格(Table)
         </button>
     </div>
+    <p><b>自定义表格设置</b></p>
+    <table class="table">
+        <tr>
+            <td colspan="2">表格大小(每个小块大小):</td>
+        </tr>
+        <tr>
+            <td colspan="2">宽: <input id="tab_width" type="text" style="width: 50%;cursor:inherit">&nbsp;px</td>
+        </tr>
+        <tr>
+            <td colspan="2">高: <input id="tab_height" type="text" style="width: 50%;cursor:inherit">&nbsp;px</td>
+        </tr>
+        <tr>
+            <td colspan="2">示例(宽100px,高40px):</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border: 0"><input class="well" style="width: 100px;height: 40px" type="text" readonly/></td>
+        </tr>
+        <tr>
+            <td colspan="2">行列数</td>
+        </tr>
+        <tr>
+            <td style="border: 0"><input id="tab_row" style="width: 70%;cursor:inherit" type="text"/>&nbsp;行</td>
+            <td style="border: 0"><input id="tab_col" style="width: 70%;cursor:inherit" type="text"/>&nbsp;列</td>
+        </tr>
+        <tr>
+            <td colspan="2">合并列</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size:16px;border: 0">格式: [行号,列号,合并数];</td>
+        </tr>
+        <tr>
+            <td style="border: 0;" class="2"><input id="tab_colspan" style="cursor:inherit;width: 200%" type="text"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">合并行</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size:16px;border: 0">格式: [行号,列号,合并数];</td>
+        </tr>
+        <tr>
+            <td style="border: 0;" class="2"><input style="cursor:inherit;width: 200%" type="text"/></td>
+        </tr>
+    </table>
+    <div class="form-group">
+        <button type="button" id="create_table" style="outline: none;width: 100%" class="btn btn-warning btn-group-sm">
+            生成表单
+        </button>
+    </div>
 </div>
 
 <div class="pull-right col-md-3"  style="border-left: 1px solid #ccc">
