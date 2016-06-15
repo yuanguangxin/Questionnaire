@@ -104,12 +104,12 @@
             <td colspan="2" style="font-size:16px;border: 0">格式: [行号,列号,合并数];</td>
         </tr>
         <tr>
-            <td style="border: 0;" class="2"><input style="cursor:inherit;width: 200%" type="text"/></td>
+            <td style="border: 0;" class="2"><input id="tab_rowspan" style="cursor:inherit;width: 200%" type="text"/></td>
         </tr>
     </table>
     <div class="form-group">
-        <button type="button" id="create_table" style="outline: none;width: 100%" class="btn btn-warning btn-group-sm">
-            生成表单
+        <button type="button" id="create_table" style="cursor: pointer;outline: none;width: 100%" class="btn btn-warning btn-group-sm">
+            生成表格
         </button>
     </div>
 </div>
@@ -141,9 +141,202 @@
         <tr>
             <td>5.编辑完成可按Ctrl+s保存添加到题库</td>
         </tr>
+        <tr>
+            <td><b>表格自定义说明</b></td>
+        </tr>
+        <tr>
+            <td>(1)根据示例可自定义表格大小(最大宽度133px)和表格规格(行,列)</td>
+        </tr>
+        <tr>
+            <td>(2)生成的表格同编辑区相同具有可编辑性</td>
+        </tr>
+        <tr>
+            <td>
+                (3)表格可拖拽(按住表格右下角)
+            </td>
+        </tr>
+        <tr>
+            <td>(4)可拖拽组件可拖拽于表格内</td>
+        </tr>
+        <tr>
+            <td>(5)合并行,和并列举例</td>
+        </tr>
+        <tr>
+            <td>原始状态: 5行5列,大小为40px*40px的表格</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table-bordered">
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>合并列,输入格式[0,0,2];[2,2,2]</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table-bordered">
+                    <tr>
+                        <td colspan="2" style="width: 40px;height: 40px;background: #ccc"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td colspan="2" style="width: 40px;height: 40px;background: #ccc"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>合并行,输入格式[0,0,2];[2,2,2]</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table-bordered">
+                    <tr>
+                        <td rowspan="2" style="width: 40px;height: 40px;background: #ccc"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td rowspan="2" style="width: 40px;height: 40px;background: #ccc"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>合并行[0,0,3],和并列[0,0,3]</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table-bordered">
+                    <tr>
+                        <td colspan="3" rowspan="3" style="width: 40px;height: 40px;background: #ccc"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                        <td style="width: 40px;height: 40px"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><b>注:</b></td>
+        </tr>
+        <tr>
+            <td style="border: 0">
+                <b>由于表格本身跟根据输入自动改变大小,并考虑表格使用的复杂性,推荐较少使用合并功能</b>
+            </td>
+        </tr>
     </table>
 </div>
-<div class="pull-right col-md-7">
+
+<div class="col-md-7">
     <br/>
     <div class="form-group">
         <button type="button" style="outline: none;" class="btn btn-success btn-group-sm">
@@ -151,8 +344,13 @@
         </button>
     </div>
     <div id="div1" contenteditable="true" class="question" ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
+         ondragover="allowDrop(event)">
+        请在这里编辑
+        <div id="table_test" ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+    </div>
 </div>
+
 <script>
     function allowDrop(ev)
     {
