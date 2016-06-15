@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e748775-3968-4c91-ba7f-ae0412411787" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/add_question.html" afterPath="$PROJECT_DIR$/web/add_question.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/add_question.js" afterPath="$PROJECT_DIR$/web/js/add_question.js" />
     </list>
     <ignored path="Questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -891,7 +887,7 @@
       <workItem from="1465807585765" duration="123000" />
       <workItem from="1465807771201" duration="1029000" />
       <workItem from="1465811182165" duration="19572000" />
-      <workItem from="1465959457317" duration="1754000" />
+      <workItem from="1465959457317" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="add login">
       <created>1465572456034</created>
@@ -942,11 +938,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465808692030</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add question completed">
+      <created>1465961853286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1465961853286</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69182000" />
+    <option name="totallyTimeSpent" value="69297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1029,7 +1032,8 @@
     <MESSAGE value="add login" />
     <MESSAGE value="update" />
     <MESSAGE value="update UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="update UI" />
+    <MESSAGE value="add question completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="add question completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
