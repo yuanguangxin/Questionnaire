@@ -6,6 +6,17 @@ window.onload = function(){
             }else {
                 if(confirm("是否保存添加到题库")){
                     //location.reload();
+                    var radio = document.getElementsByName("sex");
+                    var value=-1;
+                    for(let i=0;i<radio.length;i++){
+                        if(radio[i].checked){
+                            value = radio[i].value;
+                        }
+                    }
+                    if(value==-1){
+                        alert("请选择题目适用范围!");
+                        return;
+                    }
                     var div = document.getElementById("div1");
                     div.removeAttribute("contenteditable");
                     div.removeAttribute("ondrop");
@@ -21,8 +32,12 @@ window.onload = function(){
                         input[i].removeAttribute("readonly");
                         $(input[i]).removeClass("draggable");
                     }
+                    var ofTop = window.getComputedStyle(document.getElementsByClassName("question")[0],null)["height"];
+                    document.getElementById("div1").style.height = ofTop;
                     var div = document.getElementById("div1").outerHTML;
-                    document.body.innerHTML = div;
+                    $.post("/addQuestion.action",{questionFormat:div,sex:value},function (data,textStatus) {
+                    });
+                    location.reload();
                 }
             }
         }
@@ -151,7 +166,6 @@ window.onload = function(){
                     }
                     break;
                 case "mouseup":
-                    var ofTop = window.getComputedStyle(document.getElementsByClassName("question")[0],null)["height"];
                     if(dragging.style.left.split("px")[0]>650){
                         target.remove();
                     }

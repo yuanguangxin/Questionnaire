@@ -342,8 +342,11 @@
         <button type="button" style="outline: none;" class="btn btn-success btn-group-sm">
             编辑区
         </button>
+        <input style="margin-left: 30px" id="male" value="1" type="radio" name="sex"/><label for="male">&nbsp;男</label>
+        <input style="margin-left: 10px" id="female" value="2" type="radio" name="sex"/><label for="female">&nbsp;女</label>
+        <input style="margin-left: 10px" value="3" id="both" type="radio" name="sex"/><label for="both">&nbsp;通用</label>
     </div>
-    <div id="div1" contenteditable="true" class="question" ondrop="drop(event)"
+    <div id="div1" style="overflow: auto" contenteditable="true" class="question" ondrop="drop(event)"
          ondragover="allowDrop(event)">
         请在这里编辑
         <div id="table_test" ondrop="drop(event)"

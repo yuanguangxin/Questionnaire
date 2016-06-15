@@ -13,7 +13,7 @@ a:hover{
 	width: 12%;
 	height: 1000px;
 	float: left;
-	background-color: #03A9F4;
+	border-right:1px solid #ccc;
 }
 .left-menu>div:first-child{
 	width: 90%;
@@ -46,14 +46,12 @@ a:hover{
 .right-menu>div:first-child{
 	width: 100%;
 	height: 60px;
-	background-color: #4CAF50;
 }
 .count{
 	width: 10%;
 	float: right;
 }
 .count>div{
-	width: 80px;
 	height: 40px;
 	margin-top: 10px;
 	line-height: 40px;
@@ -69,7 +67,8 @@ a:hover{
 }
 .right-menu>div:last-child>iframe{
 	width: 100%;
-	height: 100%;
+	height: 97%;
+	overflow: scroll;
 }
 .footer{
 	width: 100%;
