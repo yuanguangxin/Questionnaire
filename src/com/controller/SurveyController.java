@@ -2,6 +2,7 @@ package com.controller;
 
 import com.models.QuestionBank;
 import com.models.Survey;
+import com.models.SurveyResult;
 import com.service.QuestionBankService;
 import com.service.SurveyService;
 import org.springframework.stereotype.Controller;
@@ -41,7 +42,9 @@ public class SurveyController {
     }
 
     @RequestMapping("/getSurveyBySex")
-    public void getSurveyBySex(@RequestParam(value = "sex") String sex, HttpServletRequest request){
+    public String getSurveyBySex(@RequestParam(value = "sex") String sex,
+                                 HttpServletRequest request,
+                                 HttpServletResponse response){
         Survey survey = surveyService.getSurvey();
         String[] ids = survey.getQuestionId().split(",");
         int[] questionIds = new int[ids.length];
@@ -49,7 +52,9 @@ public class SurveyController {
             questionIds[i] = Integer.parseInt(ids[i]);
         }
         List<QuestionBank> list = questionBankService.getQuestionByIds(questionIds);
-        request.setAttribute("questions",list);
+        request.setAttribute("allQuestions",list);
         request.setAttribute("sex",sex);
+        return "answer_questions.jsp";
     }
+
 }

@@ -37,7 +37,7 @@ public class QuestionBankController {
     public String addQuestion(QuestionBank questionBank){
         questionBank.setType(0);
         questionBankService.addQuestion(questionBank);
-        return "/add_question.html";
+        return "/add_question.jsp";
     }
 
     @RequestMapping("/questionManage")

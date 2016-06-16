@@ -12,6 +12,7 @@
           <element id="library" level="project" name="mybatis_plugins" />
           <element id="library" level="project" name="c3p0" />
           <element id="library" level="project" name="mysql-connector-java-5.0.5-bin" />
+          <element id="library" level="project" name="poi" />
         </element>
       </element>
     </root>

@@ -2,38 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e748775-3968-4c91-ba7f-ae0412411787" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/select_sex.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin_manage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/answer_questions.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/select_sex.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/admincheck.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img/login.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/poi.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/errorpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/print_survey.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/add_question.html" afterPath="$PROJECT_DIR$/web/add_question.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/admin.html" afterPath="$PROJECT_DIR$/web/admin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/AdminController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/AdminService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/AdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyResultController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyResultController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/QuestionBankService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/QuestionBankService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyResultService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyResultService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/AdminController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/QuestionBankController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/QuestionBankController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/AdminService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/AdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyResultController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyResultController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/QuestionBankService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/QuestionBankService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyResultService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyResultService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Questionnaire_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Questionnaire_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Questionnaire.iml" afterPath="$PROJECT_DIR$/Questionnaire.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/com/controller/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" afterPath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/SurveyController.java" afterPath="$PROJECT_DIR$/src/com/controller/SurveyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/AdminService.java" afterPath="$PROJECT_DIR$/src/com/service/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/QuestionBankService.java" afterPath="$PROJECT_DIR$/src/com/service/QuestionBankService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/SurveyService.java" afterPath="$PROJECT_DIR$/src/com/service/SurveyService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/SurveyResultController.java" afterPath="$PROJECT_DIR$/src/com/controller/SurveyResultController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/SurveyResultService.java" afterPath="$PROJECT_DIR$/src/com/service/SurveyResultService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/add_question.html" afterPath="$PROJECT_DIR$/web/add_question.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin.html" afterPath="$PROJECT_DIR$/web/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin_manage.jsp" afterPath="$PROJECT_DIR$/web/admin_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/answer_questions.jsp" afterPath="$PROJECT_DIR$/web/answer_questions.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/create_questionnaire.jsp" afterPath="$PROJECT_DIR$/web/create_questionnaire.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/add_question.js" afterPath="$PROJECT_DIR$/web/js/add_question.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.html" afterPath="$PROJECT_DIR$/web/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/question_manage.jsp" afterPath="$PROJECT_DIR$/web/question_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/select_sex.html" afterPath="$PROJECT_DIR$/web/select_sex.html" />
     </list>
     <ignored path="Questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,95 +60,14 @@
     <favorites_list name="Questionnaire" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="select_sex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/select_sex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionBankController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/controller/QuestionBankController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionBankService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/service/QuestionBankService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding>
-                <element signature="e#1032#1033#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SurveyController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/controller/SurveyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-              <folding>
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_question.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/add_question.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-              <folding>
-                <marker date="1466054329000" expanded="true" signature="3705:3753" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_questionnaire.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/create_questionnaire.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1104">
-              <caret line="15" column="53" selection-start-line="12" selection-start-column="11" selection-end-line="15" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -158,11 +82,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/test/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/com/test/GeneratorSqlmap.java" />
-        <option value="$PROJECT_DIR$/src/com/service/SurveyResultService.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
@@ -177,23 +99,30 @@
         <option value="$PROJECT_DIR$/web/css/add_question.css" />
         <option value="$PROJECT_DIR$/web/sass/add_question.scss" />
         <option value="$PROJECT_DIR$/web/css/admin.css" />
-        <option value="$PROJECT_DIR$/web/js/add_question.js" />
-        <option value="$PROJECT_DIR$/web/question_manage.jsp" />
-        <option value="$PROJECT_DIR$/web/add_question.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/web/create_questionnaire.jsp" />
         <option value="$PROJECT_DIR$/web/adminmanage.jsp" />
         <option value="$PROJECT_DIR$/src/com/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/web/admin.html" />
-        <option value="$PROJECT_DIR$/web/admin_manage.jsp" />
-        <option value="$PROJECT_DIR$/src/com/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/web/answer_questions.jsp" />
-        <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" />
-        <option value="$PROJECT_DIR$/web/select_sex.html" />
         <option value="$PROJECT_DIR$/src/com/service/SurveyService.java" />
         <option value="$PROJECT_DIR$/src/com/service/QuestionBankService.java" />
+        <option value="$PROJECT_DIR$/web/js/add_question.js" />
+        <option value="$PROJECT_DIR$/src/com/service/SurveyResultService.java" />
         <option value="$PROJECT_DIR$/src/com/controller/SurveyController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/admin.html" />
+        <option value="$PROJECT_DIR$/web/select_sex.html" />
+        <option value="$PROJECT_DIR$/web/answer_questions.jsp" />
+        <option value="$PROJECT_DIR$/web/add_question.html" />
+        <option value="$PROJECT_DIR$/web/add_question.jsp" />
+        <option value="$PROJECT_DIR$/web/create_questionnaire.jsp" />
+        <option value="$PROJECT_DIR$/web/question_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/errorpage.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/controller/SurveyResultController.java" />
+        <option value="$PROJECT_DIR$/web/print_survey.jsp" />
+        <option value="$PROJECT_DIR$/web/admin_manage.jsp" />
+        <option value="$PROJECT_DIR$/src/com/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/web/admin.jsp" />
+        <option value="$PROJECT_DIR$/web/login.html" />
       </list>
     </option>
   </component>
@@ -273,105 +202,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaEE/library/mysql-connector/mysql-connector-java-5.0.5-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaEE/library/poi" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="FullScreen" value="true" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -942,7 +794,7 @@
       <workItem from="1465980784429" duration="8000" />
       <workItem from="1465980810957" duration="7251000" />
       <workItem from="1465991616756" duration="209000" />
-      <workItem from="1465995932016" duration="16050000" />
+      <workItem from="1465995932016" duration="29771000" />
     </task>
     <task id="LOCAL-00001" summary="add login">
       <created>1465572456034</created>
@@ -1014,11 +866,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465991807190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1466088444204</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1466088444205</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101029000" />
+    <option name="totallyTimeSpent" value="114750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1039,7 +898,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1115,27 +974,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sass/add_question.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1147,13 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/service/SurveyResultService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1175,14 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,6 +1130,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,40 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="315" column="2" selection-start-line="315" selection-start-column="2" selection-end-line="315" selection-end-column="2" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/SurveyResultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="138" selection-start-line="11" selection-start-column="138" selection-end-line="11" selection-end-column="138" />
           <folding />
         </state>
       </provider>
@@ -1375,40 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/answer_questions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/select_sex.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1424,58 +1180,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/question_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="21" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/create_questionnaire.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1104">
-          <caret line="15" column="53" selection-start-line="12" selection-start-column="11" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/add_question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-          <folding>
-            <marker date="1466054329000" expanded="true" signature="3705:3753" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/select_sex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/controller/QuestionBankController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/service/SurveyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1489,19 +1193,180 @@
         <state relative-caret-position="419">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding>
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/add_question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <folding>
+            <marker date="1466093479000" expanded="true" signature="3836:3884" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/service/SurveyResultService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="138" selection-start-line="13" selection-start-column="138" selection-end-line="13" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/controller/SurveyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="635">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1805">
+          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/select_sex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
           <folding>
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add_question.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="367" column="7" selection-start-line="363" selection-start-column="4" selection-end-line="367" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/answer_questions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/create_questionnaire.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/question_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/errorpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/print_survey.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/SurveyResultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/QuestionBankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1573,7 +1438,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>servlet-api</last-edited>
+          <last-edited>poi</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

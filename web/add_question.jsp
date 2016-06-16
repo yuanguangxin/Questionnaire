@@ -1,3 +1,6 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,7 +142,10 @@
             <td>4.若要删除已拖拽的组件，直接将组件拖出文本编辑区外即可</td>
         </tr>
         <tr>
-            <td>5.编辑完成可按Ctrl+s保存添加到题库</td>
+            <td>5.编辑中可按Ctrl+del快速删除表格</td>
+        </tr>
+        <tr>
+            <td>6.编辑完成可按Ctrl+s保存添加到题库</td>
         </tr>
         <tr>
             <td><b>表格自定义说明</b></td>
@@ -355,6 +361,11 @@
 </div>
 
 <script>
+    $(function(){
+        if(${sessionScope.admin.username eq null}){
+            window.location.href="login.html";
+        }
+    });
     function allowDrop(ev)
     {
         ev.preventDefault();

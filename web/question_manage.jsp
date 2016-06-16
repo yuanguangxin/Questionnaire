@@ -41,6 +41,11 @@
     </c:forEach>
 </div>
 <script>
+    $(function(){
+        if(${sessionScope.admin.username eq null}){
+            window.location.href="login.html";
+        }
+    });
     var questions = document.getElementsByClassName("question");
     var s = "<div class='del'>x</div>";
     for(let i=0;i<questions.length;i++){

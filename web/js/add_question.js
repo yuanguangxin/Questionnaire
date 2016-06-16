@@ -1,5 +1,8 @@
 window.onload = function(){
     $(document).keydown(function(e){
+        if( e.ctrlKey  == true && e.keyCode == 8 ){
+            document.getElementsByClassName("able_del")[0].remove();
+        }
         if( e.ctrlKey  == true && e.keyCode == 83 ){
             if(document.getElementsByClassName("question")[0].innerHTML==""){
                 alert("请添加内容！")
@@ -84,7 +87,7 @@ window.onload = function(){
         }
 
 
-        var s = "<table style='border:5px;position: absolute;top: 0px;left: 0px' id='table_able' contenteditable='true' class='table-bordered draggable'>";
+        var s = "<table style='border:5px;position: absolute;top: 0px;left: 0px' id='table_able' contenteditable='true' class='table-bordered draggable able_del'>";
         for(let i=0;i<tab_row;i++){
             s = s + "<tr>";
             var sign=0;

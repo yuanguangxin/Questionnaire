@@ -40,6 +40,11 @@
     <button onclick="sort()" style="float: right" class="btn btn-success">确认生成</button>
 </div>
 <script>
+    $(function(){
+        if(${sessionScope.admin.username eq null}){
+            window.location.href="login.html";
+        }
+    });
     var questions = document.getElementsByClassName("question");
     for(let i=0;i<questions.length;i++){
         var height = questions[i].style.height.split("px")[0];

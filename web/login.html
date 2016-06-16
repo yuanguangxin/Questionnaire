@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="content">
-    <form role="form" class="form-horizontal" action="welcome.html">
+    <form role="form" class="form-horizontal" action="admin.jsp">
         <div class="form-group">
             <label class="col-sm-2 control-label">
                 <span class="glyphicon glyphicon-user"></span>
@@ -25,7 +25,7 @@
                 <span class="glyphicon glyphicon-pushpin"></span>
             </label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Password"/>
+                <input type="password" class="form-control" placeholder="Password"/>
             </div>
         </div>
         <br/>
@@ -45,7 +45,7 @@
         var username = document.getElementsByTagName("input")[0].value;
         var password = document.getElementsByTagName("input")[1].value;
         $.post("/login.action",{username:username,password:password},function(data,dataStatus){
-            if(text=="wrong"){
+            if(data=="wrong"){
                 alert("Wrong Account！");
             }else{
                 document.getElementsByTagName("form")[0].submit();

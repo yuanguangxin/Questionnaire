@@ -2,7 +2,6 @@ package com.controller;
 
 import com.models.Admin;
 import com.service.AdminService;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -54,11 +53,17 @@ public class AdminController {
     @RequestMapping("/addAdmin")
     public String addAdmin(Admin admin){
         adminService.addAdmin(admin);
-        return "admin.html";
+        return "/admin.jsp";
     }
 
     @RequestMapping("/deleteAdmin")
     public void deleteAdmin(@RequestParam(value = "delId")String delId){
         adminService.deleteAdmin(Integer.parseInt(delId));
+    }
+
+    @RequestMapping("/quit")
+    public String quit(HttpSession session){
+        session.setAttribute("admin",null);
+        return "login.html";
     }
 }
