@@ -44,7 +44,7 @@
     login.onclick = function(){
         var username = document.getElementsByTagName("input")[0].value;
         var password = document.getElementsByTagName("input")[1].value;
-        $.post("/login.action",{username:username,password:password},function(text,dataStatus){
+        $.post("/login.action",{username:username,password:password},function(data,dataStatus){
             if(text=="wrong"){
                 alert("Wrong Account！");
             }else{

@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="css/add_question.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <style>
-        .del{
-            position: absolute;
-            top: 0px;
-            right: 10px;
-            font-size: 16px;
-        }
-        .del:hover{
-            transform: rotate(180deg);
-            transition: .5s;
-        }
-    </style>
 </head>
 <body>
 <div class="content" style="padding:10px;cursor:pointer;width:774px;margin: 0 auto">
@@ -40,21 +28,5 @@
         <br/>
     </c:forEach>
 </div>
-<script>
-    var questions = document.getElementsByClassName("question");
-    var s = "<div class='del'>x</div>";
-    for(let i=0;i<questions.length;i++){
-        var height = questions[i].style.height.split("px")[0];
-        questions[i].parentNode.style.height = (parseInt(height)+3)+"px";
-        questions[i].innerHTML+=s;
-    }
-    $(".del").on("click",function () {
-        var questionId = $(this).parent().parent().prev().val();
-        $(this).parent().hide(500);
-        $(this).parent().parent().next("span").hide(500);
-        $.post("/deleteQuestion.action",{questionId:questionId},function (data,textStatus) {
-        });
-    });
-</script>
 </body>
 </html>

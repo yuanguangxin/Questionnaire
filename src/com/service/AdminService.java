@@ -24,4 +24,28 @@ public class AdminService {
         if(list.size()==0) return null;
         else return list.get(0);
     }
+
+    public List<Admin> getAllAdmin(){
+        AdminExample adminExample = new AdminExample();
+        AdminExample.Criteria criteria = adminExample.createCriteria();
+        criteria.andIdIsNotNull();
+        List<Admin> list = adminMapper.selectByExample(adminExample);
+        return list;
+    }
+
+    public List<Admin> getSelectAdmin(String message){
+        AdminExample adminExample = new AdminExample();
+        AdminExample.Criteria criteria = adminExample.createCriteria();
+        criteria.andUsernameLike(message);
+        List<Admin> list = adminMapper.selectByExample(adminExample);
+        return list;
+    }
+
+    public void addAdmin(Admin admin){
+        adminMapper.insert(admin);
+    }
+
+    public void deleteAdmin(int id){
+        adminMapper.deleteByPrimaryKey(id);
+    }
 }

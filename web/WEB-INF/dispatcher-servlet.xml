@@ -9,7 +9,8 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <bean class="com.controller.AdminController" p:adminService-ref="adminService"/>
-    <bean class="com.controller.QuestionBankController" p:questionBankService-ref="questionBankService"></bean>
+    <bean class="com.controller.QuestionBankController" p:questionBankService-ref="questionBankService" p:surveyService-ref="surveyService"></bean>
+    <bean class="com.controller.SurveyController" p:surveyService-ref="surveyService"></bean>
 
    <mvc:annotation-driven></mvc:annotation-driven>
     <!--配置视图解析器-->

@@ -4,6 +4,7 @@ import com.mapper.QuestionBankMapper;
 import com.models.QuestionBank;
 import com.models.QuestionBankExample;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class QuestionBankService {
@@ -26,6 +27,19 @@ public class QuestionBankService {
         QuestionBankExample.Criteria criteria = questionBankExample.createCriteria();
         criteria.andIdIsNotNull();
         List<QuestionBank> list = questionBankMapper.selectByExample(questionBankExample);
+        return list;
+    }
+
+    public void deleteQuestion(int questionId){
+        questionBankMapper.deleteByPrimaryKey(questionId);
+    }
+
+    public List<QuestionBank> getQuestionByIds(int[] ids){
+        List<QuestionBank> list = new ArrayList<>();
+        for(int i=0;i<ids.length;i++){
+            QuestionBank questionBank = questionBankMapper.selectByPrimaryKey(ids[i]);
+            list.add(questionBank);
+        }
         return list;
     }
 }
