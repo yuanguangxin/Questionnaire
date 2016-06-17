@@ -21,7 +21,7 @@ Fruit export Excel spreadsheet operations have introduced specific pages.
 
 ### Function
 
-1. Administrator login into the background data management, including
+1.Administrator login into the background data management, including
 
 (1) Entry title based on custom criteria
 
@@ -33,7 +33,7 @@ Fruit export Excel spreadsheet operations have introduced specific pages.
 
 (5) Management Administrator
 
-2. The answer users according to their gender
+2.The answer users according to their gender
 
 ### Difficulty
 
