@@ -1,43 +1,41 @@
-## 动态调查问卷生成系统
+## Dynamic questionnaire generation system
 
 ### About
 
-此系统为动态调查问卷生成系统,即百度前端技术学院最终任务。近期老师正好要求做一个这样的系统,所以自己加了后台,
-实现上可能跟要求有些区别。问卷编辑上,完成了对题目的动态添加,样式修改。包括下划文本线,输入框,以及表格的动态
-拖拽。表格完全自定义,支持合并行,和并列,自定义大小,规格。也可根据内嵌文字的长短自动改变大小。还支持对调查结
-果导出Excel表格具体页面有操作介绍。
+This system is a dynamic questionnaire generation system that Baidu_ife final task. Recent teacher asked to do just such a system, so he added the background,
+It may claim with some differences on implementation. Edit the questionnaire, completed subject to dynamically add, modify styles. Including the underlined text lines, fields, and dynamic form
+Drag and drop. Form fully customizable, supports merging line, and side by side, custom size, specifications. Also automatically resized according to the length of the embedded text. Also supports survey results
+Fruit export Excel spreadsheet operations have introduced specific pages.
 
 ### Use
 
-1.UI系统界面简洁清新,使用Bootstrap完成.
+1. Simple and fresh UI system interface using Bootstrap completed.
 
-2.原生JS+一点JQuery,前期用了点React,感觉对于这个系统反而操作上更麻烦了.
+2. Native JS + that JQuery, with a preliminary point React, feeling for the system but operate on more trouble.
 
-3.新学习了Sass的使用,所以自己写的css都是用sass完成的.
+3. The use of new learning Sass, so write your own css are done with sass.
 
-4.后台框架是常用的Spring Mvc+Spring+Mybatis
+4. The background is a common framework Spring Mvc + Spring + Mybatis
 
-5.数据库使用Mysql,刚学习了Mongodb,前期想用Nosql的方式做,后来放弃了.
-
-6.服务器除了使用Tomcat,还用Ngnix做了反向代理,速度提升了不少.
+5. The database uses Mysql, just learning the Mongodb, pre Nosql want to do with the way later abandoned.
 
 ### Function
 
-1.管理员登录,进入后台管理数据,包括
+1. Administrator login into the background data management, including
 
-(1)根据自定义条件录入题目
+(1) Entry title based on custom criteria
 
-(2)管理题目
+(2) management topics
 
-(3)生成调查问卷
+(3) to generate questionnaires
 
-(4)查看调查结果,打印Excel文件
+(4) See the survey results, print Excel files
 
-(5)管理管理员
+(5) Management Administrator
 
-2.用户根据自己性别答题
+2. The answer users according to their gender
 
 ### Difficulty
 
-本次系统制作难点在于表格的自定义生成,没找到插件,只能自己写了一套,并不是很完美,可能还会有bug.难点在于
-如何实现表格的合并行,和并列。写完觉得收获蛮大。
+The difficulty lies in the production system to generate custom forms, did not find the plug-in, only to write a set, is not perfect, you may also have a bug. The difficulty is
+How to merge table rows and tied. Harvest finished feel pretty big.
