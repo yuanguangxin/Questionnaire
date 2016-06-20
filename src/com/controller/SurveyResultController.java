@@ -100,6 +100,7 @@ public class SurveyResultController {
                 }
             }
         }
+
         OutputStream output=response.getOutputStream();
         response.reset();
         response.setHeader("Content-disposition", "attachment; filename=Survey Report.xls");
