@@ -26,7 +26,7 @@
     <c:forEach items="${requestScope.allQuestions}" var="question">
         <input type="hidden" value="${question.id}"/>
         <div class="will_blue" style="width:100%;overflow: auto;">
-                ${question.questionFormat}
+                ${question.format}
         </div>
         <c:choose>
             <c:when test="${question.sex==1}">
@@ -59,7 +59,12 @@
         $(this).parent().parent().next("span").hide(500);
         $.post("/deleteQuestion.action",{questionId:questionId},function (data,textStatus) {
         });
+        event.stopPropagation();
     });
+    $(".will_blue").on("click",function () {
+        let id = $(this).prev().val().toString().trim();
+        window.parent.location.href = "updateQuestion.action?ids="+id;
+    })
 </script>
 </body>
 </html>

@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#back_to {
+    margin-top: 10px;
+}
+
+#back_to a {
+    text-decoration: none;
+    color: #4296DB;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#back_to a:hover {
+    background: #f3f3f3;
+}
+
+#back_to a i {
+    padding-right: 0;
+}
+
+.center {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#show_help {
+    display: block;
+    text-align: center;
+    color: #e7645c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#show_help span {
+    border-bottom: 1px dotted #666;
+}
+
+.note {
+    font-size: 12px;
+    color: #777;
+    width: 70%;
+    margin: 80px auto 0 auto;
+    line-height: 2.1;
+    display: none;
+}
+
+.note p {
+    margin: 0.5em 0;
+}
+
+.note a {
+    text-decoration: none;
+    color: #4296DB;
+    border-bottom: 1px dotted #4296DB;
+    margin: 0 2px;
+}
+
+.note a:hover {
+    color: #e7645c;
+    border-bottom: 1px solid #e7645c;
+}
+
+.common_ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.common_ul li {
+    display: block;
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.common_ul li a {
+    min-width: 180px;
+    letter-spacing: 1px;
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    color: #4296DB;
+    padding: 15px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+
+.common_ul li a:hover {
+    background: #f3f3f3;
+}
+
+.common_ul li a i {
+    padding-right: 10px;
+}
+
+.common_ul li input {
+    padding: 12px 5px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.common_ul li i {
+    color: #4296DB;
+}
+
+#channels li {
+    height: 60px;
+}
+
+#email_login, #desktop_email_login {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+#email_login li, #desktop_email_login li {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+#email_login li i, #desktop_email_login li i {
+    margin-right: 10px;
+    color: #6daee3;
+}
+
+#email_login li input, #desktop_email_login li input {
+    color: #4296DB;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+}
+
+#email_login li a, #desktop_email_login li a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#email_login li a i, #desktop_email_login li a i {
+    color: #4296DB;
+}
+
+#email_login .info, #desktop_email_login .info {
+    margin: 30px 0 -25px 0;
+    color: indianred;
+}
+
+#email_login #spinner, #desktop_email_login #spinner {
+    display: none;
+}
+
+#desktop_email_login label {
+    color: #666;
+    font-size: 12px;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+    margin-top: 10px;
+    width: 50px;
+}
+
+#desktop_email_login li input {
+    padding: 6px 3px;
+    font-size: 14px;
+}
+
+#desktop_email_login li a {
+    border-radius: 5px;
+    background: #3783D1;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+#desktop_email_login li a:hover {
+    background: #5289d1;
+}
+
+#desktop_email_login li #info {
+    font-size: 12px;
+}
+
+#desktop_email_login .info {
+    margin: 20px 0 -35px 0;
+}
+
+#wechat_login {
+    padding-top: 0;
+}
+
+#wechat_login li {
+    margin-top: 35px;
+}
+
+#wechat_login p {
+    margin: 0;
+    padding: 0;
+}
+
+#wechat_login .note_warn {
+    margin-top: 15px;
+    font-size: 12px;
+    color: indianred;
+}
+
+#wechat_login img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .common_ul li input {
+        width: 250px;
+    }
+
+    .common_ul li a {
+        font-size: 16px;
+    }
+
+    .hint--bottom:before, .hint--bottom:after {
+        display: none;
+    }
+
+    #show_help {
+        display: none;
+    }
+}
+
+#footer {
+    width: 100%;
+    line-height: 1.8;
+}

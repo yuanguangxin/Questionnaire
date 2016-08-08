@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.models.Survey" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="question_id" property="questionId" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -65,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, question_id, status
+    id, question_id, name, status
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.models.SurveyExample" >
     select
@@ -98,10 +99,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.models.Survey" >
-    insert into survey (id, question_id, status
-      )
-    values (#{id,jdbcType=INTEGER}, #{questionId,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}
-      )
+    insert into survey (id, question_id, name, 
+      status)
+    values (#{id,jdbcType=INTEGER}, #{questionId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.models.Survey" >
     insert into survey
@@ -111,6 +112,9 @@
       </if>
       <if test="questionId != null" >
         question_id,
+      </if>
+      <if test="name != null" >
+        name,
       </if>
       <if test="status != null" >
         status,
@@ -122,6 +126,9 @@
       </if>
       <if test="questionId != null" >
         #{questionId,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
       </if>
       <if test="status != null" >
         #{status,jdbcType=INTEGER},
@@ -143,6 +150,9 @@
       <if test="record.questionId != null" >
         question_id = #{record.questionId,jdbcType=VARCHAR},
       </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
       <if test="record.status != null" >
         status = #{record.status,jdbcType=INTEGER},
       </if>
@@ -155,6 +165,7 @@
     update survey
     set id = #{record.id,jdbcType=INTEGER},
       question_id = #{record.questionId,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
       status = #{record.status,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -166,6 +177,9 @@
       <if test="questionId != null" >
         question_id = #{questionId,jdbcType=VARCHAR},
       </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
       <if test="status != null" >
         status = #{status,jdbcType=INTEGER},
       </if>
@@ -175,6 +189,7 @@
   <update id="updateByPrimaryKey" parameterType="com.models.Survey" >
     update survey
     set question_id = #{questionId,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
       status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>

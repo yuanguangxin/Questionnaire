@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=0.8 user-scalable=0" name="viewport">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="center">
+    <form action="/register.action" method="post">
+        <ul id="email_login" class="common_ul">
+            <h3>Register</h3>
+            <hr/>
+
+            <li>
+                <i class="glyphicon glyphicon-user"></i>
+                <input placeholder="Username" type="text" id="username" name="username"/>
+            </li>
+
+            <li>
+                <i class="glyphicon glyphicon-pushpin"></i>
+                <input placeholder="Password" type="password" id="password" name="password"/>
+            </li>
+
+            <li>
+                <i class="glyphicon glyphicon-pawn"></i>
+                <input placeholder="Confirm" type="password" id="confirm" name="confirm"/>
+            </li>
+
+            <li>
+                <i class="glyphicon glyphicon-book"></i>
+                <input placeholder="Your Name" type="password" id="name" name="name"/>
+            </li>
+
+            <li>
+                <a id="submit" style="cursor: pointer"> <i class="glyphicon glyphicon-log-in"></i>Register</a>
+            </li>
+        </ul>
+    </form>
+    <div id="footer">
+        <div style="width:100px;margin: 0 auto">
+            <small>©哈医大肿瘤医院</small>
+        </div>
+    </div>
+</div>
+<script>
+    function register() {
+        var username = $("#username").val();
+        var passord = $("#password").val();
+        var confirm = $("#confirm").val();
+        var name = $("#name").val();
+        if(username==""||passord==""||confirm==""||name==""){
+            alert("请填写完整!");
+            return;
+        }else if(passord!=confirm){
+            alert("两次密码输入不一致!");
+            return;
+        }else {
+            $.post("/checkUsername.action",{username:username},function (data,textStatus) {
+                if(data=="false"){
+                    alert("用户名已存在!");
+                    return;
+                } else {
+                    $("form").submit();
+                }
+            });
+        }
+    }
+    document.body.onkeydown = function () {
+        if (event.keyCode == 13) {
+            register();
+        }
+    };
+    $("#submit").click(function () {
+        register();
+    })
+</script>
+</body>
+</html>

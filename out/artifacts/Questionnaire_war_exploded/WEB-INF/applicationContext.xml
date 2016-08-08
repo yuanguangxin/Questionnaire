@@ -49,34 +49,34 @@
         </property>
     </bean>
 
-    <!--mapper扫描器-->
-    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
-        <!--<property name="basePackage" value="com.mapper"/>-->
-        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>-->
-    <!--</bean>-->
+    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.mapper.UserMapper"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
 
     <bean id="adminMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.mapper.AdminMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
-    <bean id="questionBankMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.mapper.QuestionBankMapper"/>
+    <bean id="questionMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.mapper.QuestionMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
     <bean id="surveyMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.mapper.SurveyMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
-    <bean id="surveyResultMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.mapper.SurveyResultMapper"/>
+    <bean id="resultMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.mapper.ResultMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
 
+    <bean id="userService" class="com.service.UserService" p:userMapper-ref="userMapper"></bean>
     <bean id="adminService" class="com.service.AdminService" p:adminMapper-ref="adminMapper"/>
-    <bean id="questionBankService" class="com.service.QuestionBankService" p:questionBankMapper-ref="questionBankMapper"/>
+    <bean id="questionService" class="com.service.QuestionService" p:questionMapper-ref="questionMapper"/>
     <bean id="surveyService" class="com.service.SurveyService" p:surveyMapper-ref="surveyMapper"/>
-    <bean id="surveyResultService" class="com.service.SurveyResultService" p:surveyResultMapper-ref="surveyResultMapper"/>
+    <bean id="resultService" class="com.service.ResultService" p:resultMapper-ref="resultMapper"/>
 
     <!--&lt;!&ndash;配置事务管理器&ndash;&gt;-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
@@ -97,9 +97,10 @@
     </tx:advice>
     <aop:config>
         <aop:pointcut id="myPointcut" expression="bean(adminService)||
-                                                  bean(questionBankService)||
+                                                  bean(questionService)||
                                                   bean(surveyService)||
-                                                  bean(surveyResultService)"/>
+                                                  bean(resultService)||
+                                                  bean(userService)"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut"/>
     </aop:config>
 </beans>

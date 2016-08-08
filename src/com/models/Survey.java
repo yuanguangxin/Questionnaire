@@ -5,6 +5,8 @@ public class Survey {
 
     private String questionId;
 
+    private String name;
+
     private Integer status;
 
     public Integer getId() {
@@ -21,6 +23,14 @@ public class Survey {
 
     public void setQuestionId(String questionId) {
         this.questionId = questionId == null ? null : questionId.trim();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getStatus() {

@@ -23,16 +23,6 @@ public class AdminController {
         this.adminService = adminService;
     }
 
-    @RequestMapping("/login")
-    public void login(Admin ad, HttpServletResponse response, HttpSession session) throws Exception{
-        Admin admin = adminService.login(ad);
-        if(admin==null){
-            response.getWriter().print("wrong");
-        }else {
-            session.setAttribute("admin",admin);
-        }
-    }
-
     @RequestMapping("/getSelectAdmin")
     public String getSelectAdmin(@RequestParam(value = "message")String message,
                                  HttpServletRequest request){
@@ -53,7 +43,7 @@ public class AdminController {
     @RequestMapping("/addAdmin")
     public String addAdmin(Admin admin){
         adminService.addAdmin(admin);
-        return "/admin.jsp";
+        return "redirect:/admin.jsp";
     }
 
     @RequestMapping("/deleteAdmin")

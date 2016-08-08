@@ -46,7 +46,8 @@
 			if(content == "题目管理"){
 				$("iframe").prop("src","/questionManage.action");
 			}else if(content == "问卷生成"){
-				$("iframe").prop("src","/createQuestionnaire.action");
+//				$("iframe").prop("src","/createQuestionnaire.action");
+				$("iframe").prop("src","/selectSurvey.action");
 			}else if(content == "打印调查结果") {
 				$("iframe").prop("src","/getAllResult.action");
 			}else if(content=="管理员管理"){

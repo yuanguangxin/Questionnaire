@@ -3,6 +3,7 @@ package com.service;
 import com.mapper.AdminMapper;
 import com.models.Admin;
 import com.models.AdminExample;
+
 import java.util.List;
 
 public class AdminService {
@@ -16,10 +17,10 @@ public class AdminService {
         this.adminMapper = adminMapper;
     }
 
-    public Admin login(Admin admin){
+    public Admin login(String username, String password){
         AdminExample adminExample = new AdminExample();
         AdminExample.Criteria criteria = adminExample.createCriteria();
-        criteria.andUsernameEqualTo(admin.getUsername()).andPasswordEqualTo(admin.getPassword());
+        criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
         List<Admin> list = adminMapper.selectByExample(adminExample);
         if(list.size()==0) return null;
         else return list.get(0);
@@ -36,7 +37,7 @@ public class AdminService {
     public List<Admin> getSelectAdmin(String message){
         AdminExample adminExample = new AdminExample();
         AdminExample.Criteria criteria = adminExample.createCriteria();
-        criteria.andUsernameLike(message);
+        criteria.andUsernameLike("%"+message+"%");
         List<Admin> list = adminMapper.selectByExample(adminExample);
         return list;
     }

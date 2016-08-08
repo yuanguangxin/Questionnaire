@@ -38,7 +38,7 @@ window.onload = function(){
                     var ofTop = window.getComputedStyle(document.getElementsByClassName("question")[0],null)["height"];
                     document.getElementById("div1").style.height = ofTop;
                     var div = document.getElementById("div1").outerHTML;
-                    $.post("/addQuestion.action",{questionFormat:div,sex:value},function (data,textStatus) {
+                    $.post("/addQuestion.action",{format:div,sex:value},function (data,textStatus) {
                     });
                     location.reload();
                 }

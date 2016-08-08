@@ -15,14 +15,19 @@
     <c:forEach items="${requestScope.allQuestions}" var="question">
         <c:if test="${question.sex!=requestScope.sex}">
             <div class="will_blue" style="width:100%;overflow: auto;">
-                    ${question.questionFormat}
+                    ${question.format}
             </div>
             <br/>
             <br/>
         </c:if>
     </c:forEach>
+    <button type="hidden" style="display: none" id="sid" value="${requestScope.sid}"/>
+    <button type="hidden" style="display: none" id="hid" value="${sessionScope.user.id}"/>
     <div class="form-group">
-        <button type="button" onclick="sub()" id="create_table" style="cursor: pointer;outline: none;" class="btn btn-success btn-group-sm">
+        <button type="button" onclick="save()" id="save" style="cursor: pointer;outline: none;" class="btn btn-success btn-group-sm">
+            保存已答题目
+        </button>
+        <button type="button" onclick="sub()" id="create_table" style="cursor: pointer;outline: none;margin-left: 10px" class="btn btn-success btn-group-sm">
             提交调查表
         </button>
     </div>
@@ -44,6 +49,7 @@
             }
         }
     }
+
     function sub() {
         var inputs = document.getElementsByTagName("input");
         var sign=0;
@@ -68,10 +74,40 @@
         var value = document.getElementsByTagName("h1")[0].getAttribute("value");
         if(value==1) value=2;
         else value = 1;
-        alert(answers.toString());
-        $.post("/addAnswer.action",{sex:value,answer:answers.join(";")},function (data,textStatus) {
+        var content = document.getElementsByClassName("content")[0].outerHTML;
+        var userId = document.getElementById("hid").value;
+        var sid = document.getElementById("sid").value;
+        $.post("/addAnswer.action",{surveyId:sid,userId:userId,sex:value,answer:answers.join(";"),format:content,status:1},function (data,textStatus) {
             answers=[];
             alert("提交成功.");
+        });
+    }
+    function save() {
+        var inputs = document.getElementsByTagName("input");
+        var sign=0;
+        for(let i=0;i<inputs.length;i++) {
+            if (inputs[i].value.indexOf(",") != -1 || inputs[i].value.indexOf(";") != -1) {
+                alert("问卷中不得出现\",\";\"字符!");
+                return;
+            }
+        }
+        if(sign==0){
+            getAnswers();
+        }
+        var value = document.getElementsByTagName("h1")[0].getAttribute("value");
+        if(value==1) value=2;
+        else value = 1;
+        var userId = document.getElementById("hid").value;
+        var sid = document.getElementById("sid").value;
+
+        var input = document.getElementsByTagName("input");
+        for (var i=0;i<input.length;i++){
+            input[i].setAttribute("value",input[i].value);
+        }
+        var content = document.getElementsByClassName("content")[0].outerHTML;
+        $.post("/addAnswer.action",{surveyId:sid,userId:userId,sex:value,answer:answers.join(";"),format:content,status:0},function (data,textStatus) {
+            answers=[];
+            alert("保存成功.");
         });
     }
 </script>
