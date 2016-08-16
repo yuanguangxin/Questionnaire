@@ -1,124 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e748775-3968-4c91-ba7f-ae0412411787" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/controller/QuestionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/controller/ResultController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/QuestionMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/QuestionMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/ResultMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/ResultMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/UserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mapper/UserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/Question.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/QuestionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/ResultExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/models/UserExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/service/QuestionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/service/ResultService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/answer_savequestions.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/register.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/getCurrentResult.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/update_question.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/select_survey.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/update_question.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/user_select.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/QuestionBankController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyResultController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/QuestionBankMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/QuestionBankMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/SurveyResultMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/SurveyResultMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/QuestionBank.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/QuestionBankExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/QuestionBankExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/QuestionBankExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/QuestionBankExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyResultExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyResultExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyResultExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyResultExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/QuestionBankService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyResultService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/QuestionBankController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyResultController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/QuestionBankMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/QuestionBankMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/SurveyResultMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/SurveyResultMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/QuestionBank.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/QuestionBankExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/QuestionBankExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/QuestionBankExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/QuestionBankExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyResultExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyResultExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyResultExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyResultExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/QuestionBankService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyResultService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/controller/QuestionBankController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/controller/SurveyResultController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/QuestionBankMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/QuestionBankMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/SurveyResultMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mapper/SurveyResultMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/QuestionBank.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/QuestionBankExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/SurveyResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/models/SurveyResultExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/service/QuestionBankService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/service/SurveyResultService.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/select_sex.html" afterPath="$PROJECT_DIR$/web/select_sex.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyController.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/controller/SurveyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/Survey.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/Survey.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$Criteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$Criterion.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/models/SurveyExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/AdminService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyService.class" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/service/SurveyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyController.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/controller/SurveyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/Survey.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/models/Survey.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$Criteria.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$Criterion.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/models/SurveyExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/AdminService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyService.class" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/service/SurveyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="2e748775-3968-4c91-ba7f-ae0412411787" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Questionnaire.iml" afterPath="$PROJECT_DIR$/Questionnaire.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/SurveyMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/classes/com/mapper/SurveyMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Questionnaire_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/SurveyMapper.xml" afterPath="$PROJECT_DIR$/out/production/Questionnaire/com/mapper/SurveyMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/com/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/controller/SurveyController.java" afterPath="$PROJECT_DIR$/src/com/controller/SurveyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mapper/SurveyMapper.xml" afterPath="$PROJECT_DIR$/src/com/mapper/SurveyMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/models/Survey.java" afterPath="$PROJECT_DIR$/src/com/models/Survey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/models/SurveyExample.java" afterPath="$PROJECT_DIR$/src/com/models/SurveyExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/AdminService.java" afterPath="$PROJECT_DIR$/src/com/service/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/service/SurveyService.java" afterPath="$PROJECT_DIR$/src/com/service/SurveyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin.jsp" afterPath="$PROJECT_DIR$/web/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/answer_questions.jsp" afterPath="$PROJECT_DIR$/web/answer_questions.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/create_questionnaire.jsp" afterPath="$PROJECT_DIR$/web/create_questionnaire.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/errorpage.html" afterPath="$PROJECT_DIR$/web/errorpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/add_question.js" afterPath="$PROJECT_DIR$/web/js/add_question.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.html" afterPath="$PROJECT_DIR$/web/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/print_survey.jsp" afterPath="$PROJECT_DIR$/web/print_survey.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/question_manage.jsp" afterPath="$PROJECT_DIR$/web/question_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/register.html" afterPath="$PROJECT_DIR$/web/register.html" />
     </list>
     <ignored path="Questionnaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,12 +24,12 @@
     <favorites_list name="Questionnaire" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="print_survey.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/print_survey.jsp">
+    <leaf>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+            <state relative-caret-position="284">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -194,7 +79,6 @@
         <option value="$PROJECT_DIR$/src/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/web/admin_login.html" />
         <option value="$PROJECT_DIR$/web/css/register.css" />
-        <option value="$PROJECT_DIR$/web/register.html" />
         <option value="$PROJECT_DIR$/web/select_sex.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/login.html" />
@@ -223,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/com/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/controller/ResultController.java" />
         <option value="$PROJECT_DIR$/web/print_survey.jsp" />
+        <option value="$PROJECT_DIR$/web/register.html" />
       </list>
     </option>
   </component>
@@ -275,6 +160,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,29 +195,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Questionnaire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -999,7 +866,9 @@
       <workItem from="1470479830133" duration="4436000" />
       <workItem from="1470573608795" duration="14303000" />
       <workItem from="1470643979986" duration="12058000" />
-      <workItem from="1470666320670" duration="9382000" />
+      <workItem from="1470666320670" duration="9466000" />
+      <workItem from="1470677009341" duration="8000" />
+      <workItem from="1471326469736" duration="185000" />
     </task>
     <task id="LOCAL-00001" summary="add login">
       <created>1465572456034</created>
@@ -1162,15 +1031,22 @@
       <option name="project" value="LOCAL" />
       <updated>1468886330010</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=" update a lot">
+      <created>1470676966431</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1470676966431</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169561000" />
+    <option name="totallyTimeSpent" value="169838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1187,7 +1063,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1256,7 +1132,8 @@
     <MESSAGE value="delete a file" />
     <MESSAGE value="modify controller" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value=" update a lot" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update a lot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1312,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="275" column="1" selection-start-line="275" selection-start-column="1" selection-end-line="275" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="443" column="0" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,19 +1281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/add_question.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="347" column="8" selection-start-line="347" selection-start-column="8" selection-end-line="349" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
           <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,10 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1439,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1447,7 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1455,15 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1487,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1495,9 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1505,9 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1523,7 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1565,9 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3552">
           <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-          <folding>
-            <marker date="1470674879000" expanded="true" signature="3882:3930" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1575,9 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,13 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#2521#2522#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1628,10 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1647,9 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="156" column="42" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1657,14 +1478,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/print_survey.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="274">
           <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add_question.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="344" column="16" selection-start-line="344" selection-start-column="16" selection-end-line="344" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding />
         </state>
       </provider>
