@@ -4,6 +4,7 @@ import com.models.Admin;
 import com.models.User;
 import com.service.AdminService;
 import com.service.UserService;
+import com.util.Decode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,6 +47,7 @@ public class UserController {
                              @RequestParam("password")String password,
                              HttpServletResponse response,
                              HttpSession session) throws Exception{
+        password = new String(Decode.decode(password));
         User user = userService.login(username,password);
         Admin admin = adminService.login(username,password);
         if(user==null&&admin==null){
