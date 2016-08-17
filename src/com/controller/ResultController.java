@@ -181,7 +181,7 @@ public class ResultController {
         }
     }
 
-    @RequestMapping("toSave")
+    @RequestMapping("/toSave")
     public String toSave(@RequestParam("id") String id,HttpServletRequest request){
         Result result = resultService.getResultById(Integer.parseInt(id));
         request.setAttribute("result",result);

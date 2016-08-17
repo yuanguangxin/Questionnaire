@@ -13,7 +13,16 @@
     <bean class="com.controller.QuestionController" p:questionService-ref="questionService" p:surveyService-ref="surveyService"></bean>
     <bean class="com.controller.SurveyController" p:resultService-ref="resultService" p:surveyService-ref="surveyService" p:questionService-ref="questionService"></bean>
     <bean class="com.controller.ResultController" p:surveyService-ref="surveyService" p:resultService-ref="resultService" p:userService-ref="userService"></bean>
-   <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/*.action" />
+            <mvc:mapping path="/*/*.action" />
+            <mvc:exclude-mapping path="/loginCheck.action"/>
+            <bean class="com.handler.BaseHandler"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 
