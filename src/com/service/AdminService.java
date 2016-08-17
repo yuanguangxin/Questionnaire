@@ -3,7 +3,9 @@ package com.service;
 import com.mapper.AdminMapper;
 import com.models.Admin;
 import com.models.AdminExample;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 public class AdminService {

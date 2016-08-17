@@ -8,7 +8,9 @@
 		http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
-    <bean class="com.controller.UserController" p:userService-ref="userService" p:adminService-ref="adminService"></bean>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <bean class="com.controller.UserController"></bean>
     <bean class="com.controller.AdminController" p:adminService-ref="adminService"/>
     <bean class="com.controller.QuestionController" p:questionService-ref="questionService" p:surveyService-ref="surveyService"></bean>
     <bean class="com.controller.SurveyController" p:resultService-ref="resultService" p:surveyService-ref="surveyService" p:questionService-ref="questionService"></bean>
@@ -19,7 +21,7 @@
             <mvc:mapping path="/*.action" />
             <mvc:mapping path="/*/*.action" />
             <mvc:exclude-mapping path="/loginCheck.action"/>
-            <bean class="com.handler.BaseHandler" />
+            <bean class="com.handler.BaseHandler"/>
         </mvc:interceptor>
     </mvc:interceptors>
 

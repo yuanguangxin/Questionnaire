@@ -3,10 +3,12 @@ package com.service;
 import com.mapper.UserMapper;
 import com.models.User;
 import com.models.UserExample;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class UserService {
+    @Autowired
     private UserMapper userMapper;
 
     public void setUserMapper(UserMapper userMapper) {

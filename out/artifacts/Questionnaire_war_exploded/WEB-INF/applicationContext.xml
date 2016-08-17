@@ -71,7 +71,9 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
-    <bean id="userService" class="com.service.UserService" p:userMapper-ref="userMapper"></bean>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    
+    <bean id="userService" class="com.service.UserService"/>
     <bean id="adminService" class="com.service.AdminService" p:adminMapper-ref="adminMapper"/>
     <bean id="questionService" class="com.service.QuestionService" p:questionMapper-ref="questionMapper"/>
     <bean id="surveyService" class="com.service.SurveyService" p:surveyMapper-ref="surveyMapper"/>

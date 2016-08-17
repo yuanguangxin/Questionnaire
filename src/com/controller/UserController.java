@@ -4,32 +4,28 @@ import com.models.Admin;
 import com.models.User;
 import com.service.AdminService;
 import com.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @Controller
 public class UserController {
+    @Autowired
     private UserService userService;
+    @Autowired
     private AdminService adminService;
 
     public void setAdminService(AdminService adminService) {
         this.adminService = adminService;
     }
 
-    public AdminService getAdminService() {
-        return adminService;
-    }
-
     public void setUserService(UserService userService) {
         this.userService = userService;
-    }
-
-    public UserService getUserService() {
-        return userService;
     }
 
     @RequestMapping("/checkUsername")
