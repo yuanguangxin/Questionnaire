@@ -40,8 +40,8 @@
     <orderEntry type="library" name="ssm" level="project" />
     <orderEntry type="library" name="mybatis_plugins" level="project" />
     <orderEntry type="library" name="c3p0" level="project" />
-    <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.0.5-bin" level="project" />
     <orderEntry type="library" name="poi" level="project" />
+    <orderEntry type="library" name="servlet-api" level="project" />
   </component>
 </module>

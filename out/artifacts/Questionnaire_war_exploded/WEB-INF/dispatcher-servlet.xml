@@ -1,20 +1,25 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
-		http://www.springframework.org/schema/mvc
-		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	   http://www.springframework.org/schema/mvc
+	   http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 
-    <bean class="com.controller.UserController"></bean>
-    <bean class="com.controller.AdminController" p:adminService-ref="adminService"/>
-    <bean class="com.controller.QuestionController" p:questionService-ref="questionService" p:surveyService-ref="surveyService"></bean>
-    <bean class="com.controller.SurveyController" p:resultService-ref="resultService" p:surveyService-ref="surveyService" p:questionService-ref="questionService"></bean>
-    <bean class="com.controller.ResultController" p:surveyService-ref="surveyService" p:resultService-ref="resultService" p:userService-ref="userService"></bean>
+    <!--<context:component-scan base-package="com.controller"/>-->
+    <bean id="adminController" class="com.controller.AdminController"/>
+    <bean id="questionController" class="com.controller.QuestionController"/>
+    <bean id="resultController" class="com.controller.ResultController"/>
+    <bean id="surveyController" class="com.controller.SurveyController"/>
+    <bean id="userController" class="com.controller.UserController"/>
+
+
+
     <mvc:annotation-driven></mvc:annotation-driven>
     <mvc:interceptors>
         <mvc:interceptor>
