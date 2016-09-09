@@ -148,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,8 +210,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -894,7 +894,8 @@
       <workItem from="1472847519003" duration="5000" />
       <workItem from="1472847557172" duration="49000" />
       <workItem from="1473046946953" duration="127000" />
-      <workItem from="1473315327657" duration="3000" />
+      <workItem from="1473315327657" duration="24000" />
+      <workItem from="1473398650369" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="add login">
       <created>1465572456034</created>
@@ -1176,11 +1177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473047022488</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update">
+      <created>1473315335933</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1473315335933</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184859000" />
+    <option name="totallyTimeSpent" value="184887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
