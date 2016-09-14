@@ -74,9 +74,8 @@ public class QuestionController {
         return "update_question.jsp";
     }
 
-    @RequestMapping("sureUpdate")
-    public String sureUpdate(Question question){
+    @RequestMapping("/sureUpdate")
+    public void sureUpdate(Question question,HttpServletResponse response){
         questionService.sureUpdate(question);
-        return "admin.jsp";
     }
 }

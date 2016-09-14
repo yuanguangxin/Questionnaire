@@ -8,8 +8,8 @@
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/add_question.css">
-    <script src="js/update_question.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/update_question.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>

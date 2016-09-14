@@ -40,7 +40,9 @@ window.onload = function(){
                     document.getElementById("div1").style.height = ofTop;
                     var div = document.getElementById("div1").outerHTML;
                     var hidden = document.getElementById("hidden").value;
-                    location.href = "/sureUpdate.action?id="+hidden+"&format="+div+"&sex="+value;
+                    $.post("/sureUpdate.action",{id:hidden,format:div,sex:value},function (data,textStatus) {
+                         location.href = "admin.jsp";
+                    });
                 }
             }
         }

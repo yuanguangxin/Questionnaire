@@ -17,8 +17,7 @@
             <div class="will_blue" style="width:100%;overflow: auto;">
                     ${question.format}
             </div>
-            <br/>
-            <br/>
+            <hr/>
         </c:if>
     </c:forEach>
     <button type="hidden" style="display: none" id="sid" value="${requestScope.sid}"/>
