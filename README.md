@@ -9,7 +9,7 @@
 
 ### ScreenShot
 
-![](![](screenshot.png))
+![](screenshot.png)
 
 ### Use
 
